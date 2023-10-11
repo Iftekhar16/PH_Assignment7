@@ -29,16 +29,47 @@
     </header>
     <!-- Header/Navbar section end -->
 
+    <div class="spacer w-full mt-5 text-3xl text-center">Frequently Asked Questions</div>
 
-
-    <div class="question-container lg:w-9/12 md:w-[90%] w-[95%] mx-auto text-left p-10">
-        <div class="border border-gray-200 rounded text-sm px-5 py-3 my-5">
-            <div class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mb-3">1</div>
-            <p class="question text-lg">What are the key differences between map, filter, for each and find?</p>
-            <p class="answer"><span class="underline">Answer:</span> 
-                The purpose of map is to take in an array and pass it through a function
-            </p>
-        </div>
+    <div class="border border-gray-200 lg:w-9/12 md:w-[90%] w-[95%] mx-auto rounded text-sm px-5 py-3 my-5">
+        <div class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mb-2">1</div>
+        <p class="question text-lg">What are the key differences between map, filter, forEach and find?</p>
+        <p class="answer"><span class="underline">Answer:</span> 
+            <br>1. The purpose of map is to take in an array and pass it through a function which manipulates the array and then returns a new array. The new array has the exact length of the previous array.
+            <br>2. filter takes in an array and then passes it through a function as well. But this filters out tthe elemnts that are not "true", meaning it only returns the elemnets as a new array that meet the logic defined in the function. 
+            <br>3. forEach iterates for each and every element of the array and executes commands inside the function. It does not return a new array.
+            <br>4. find is used to find the first element of the array that meet a certain criteria defined as a parameter. It returns only that element.
+        </p>
+    </div>
+    <div class="border border-gray-200 lg:w-9/12 md:w-[90%] w-[95%] mx-auto rounded text-sm px-5 py-3 my-5">
+        <div class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mb-2">2</div>
+        <p class="question text-lg">What are the key differences between local storage, session storage and cookies?</p>
+        <p class="answer"><span class="underline">Answer:</span> 
+            <br>1. Local storage is persistent, meaning the data will be stored within the browser and does not go away if the borwser is closed. The storage limit here is typically 5-10MB. These storages are usually used to store user's preferences and cached data.
+            <br>2. Session storage is not persistent but rather session based, meaning the data will be removed if the tab or browser is closed. This also has the same storage limit as local storage which is around 5-10MB. These are usually used to store temporary data or page specific short term information.
+            <br>3. Cookies can be both persistent and session based. These have a very short storage, typically around 4KB per cookie. These are used to store some small tokens or information that is needed for website functionality.
+        </p>
+    </div>
+    <div class="border border-gray-200 lg:w-9/12 md:w-[90%] w-[95%] mx-auto rounded text-sm px-5 py-3 my-5">
+        <div class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mb-2">3</div>
+        <p class="question text-lg">What is event loop? How does it work?</p>
+        <p class="answer"><span class="underline">Answer:</span> 
+            Event loop is a conccept of asynchronus programming. It continuously keeps checking the call stack and executes pending tasks in a non-blocking manner which then allows the website/web page to be responsive and not laggy.
+        </p>
+    </div>
+    <div class="border border-gray-200 lg:w-9/12 md:w-[90%] w-[95%] mx-auto rounded text-sm px-5 py-3 my-5">
+        <div class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mb-2">4</div>
+        <p class="question text-lg">What is the purpose of quizTimer function in the noChange.js file?</p>
+        <p class="answer"><span class="underline">Answer:</span> 
+            The quizTimer function handles the timer in the quiz page. It starts immediately when the start quiz button is pressed. It then starts a timer which is shown in the h1 tag containing the "count" id. There are if conditions set in the function which will detect if the count's value is greater than 60 or not. If it is, then it will keep alternating the classList, thus changing the text color of the h1 per second depending on weither the count value is even or not. Here the 1000 value means 1000 millisecond which is 1 second. As the timer is in millisecond, it has to do some additional work before showing it in the h1 tag and convert it into minutes and seconds which is far more readable.
+        </p>
+    </div>
+    <div class="border border-gray-200 lg:w-9/12 md:w-[90%] w-[95%] mx-auto rounded text-sm px-5 py-3 my-5 mb-40">
+        <div class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mb-2">5</div>
+        <p class="question text-lg">What is the purpose of chooseQuiz function in the noChange.js file?</p>
+        <p class="answer"><span class="underline">Answer:</span> 
+            This function's purpose is to select a quiz. It at first tries to find if the answer is even there or not. If it is, then it uses the quiz id to push it to answers and update the serial variable to keep track of the cound of answers.
+        </p>
     </div>
 </body>
 </html>
